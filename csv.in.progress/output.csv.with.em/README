@@ -1,0 +1,20 @@
+The following csv files were pulled from /research/jagodzinski/resilience_output
+
+EM data was added as the 8th column
+
+Time steps for EM data are sperated by a ';'
+
+Checking each of these csv files for complete data under the following conditions:
+  - The second line at index 0 equals "0" or "WT"
+  - Every line has EM data
+  - There are more than 2 lines
+
+Shows that these are complete:
+  3TQ8.2001.ra.out-1.csv
+  6AC0.235.ra.out-1.csv
+  6AC0.235.ra.out-2.csv
+  6NNX.201.ra.out-1.csv
+  6NNX.201.ra.out-2.csv
+  6QNB.201.ra.out-1.csv
+  6QNB.201.ra.out-2.csv
+  6QNB.201.ra.out-3.csv
