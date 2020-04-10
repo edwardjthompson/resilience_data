@@ -1,0 +1,37 @@
+How to use files:
+
+-----------------
+MODULAR FILES:
+
+normalize.py:
+-Usage: 2 arguments: [csv file name] [column name]
+
+-Method: normalize(filename, column_name)
+-		 normalizes values of a column in a csv file and places values in following column
+
+-Output: result folder (same file name)
+
+em_diff.py:
+-Usage: 1 argument: [csv file name]
+
+-Method: em_diff(filename)
+-        Calculates em_diff between start and end em and places them into column 11
+
+-Output: em_diff folder (same file name)
+-----------------
+'SCRIPT' Files:
+
+normalize_column.py:
+-Usage: 1 argument: [column name]
+-Place in same directory as csv files
+
+-How it works:
+-Grabs all csv files into a list and calls the normalize method from normalize.py for each one
+
+get_em_diff.py:
+-Usage: 0 argument
+-Place in same directory as csv files
+
+-How it works:
+-Grabs all csv files into a list and calls the em_diff method from em_diff.py for each one
+-----------------
