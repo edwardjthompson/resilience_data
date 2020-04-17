@@ -1,12 +1,12 @@
 import pandas as pd
 import sys
 
-data = pd.read_csv(open(sys.argv[1]), keep_default_na=False)
-# print(data)
-
 if (len(sys.argv) < 2):
 	print("Add path to a csv file")
 	sys.exit(0)
+
+data = pd.read_csv(open(sys.argv[1]), keep_default_na=False)
+# print(data)
 
 if (len(sys.argv) < 4):
 	print(data.corr())
