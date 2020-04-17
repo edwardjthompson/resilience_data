@@ -2,7 +2,7 @@ import pandas as pd
 import sys
 
 if (len(sys.argv) < 2):
-	print("Add path to a csv file")
+	print("Add path to a csv file\nExample paths:\n/research/jagondzinski/resilience_output/thomp276/2020-04-17-csvOutput/3TQ8.2001.out-1.csv\n../2020-04-17-csvOutput/3TQ8.2001.out-1.csv")
 	sys.exit(0)
 
 data = pd.read_csv(open(sys.argv[1]), keep_default_na=False)
