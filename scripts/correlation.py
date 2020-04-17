@@ -14,5 +14,7 @@ if (len(sys.argv) < 4):
 	sys.exit(0)
 
 print("\nPearson correlation of", sys.argv[2], "and", sys.argv[3])
-
-print(data[sys.argv[2]].corr(data[sys.argv[3]]))
+try:
+	print(data[sys.argv[2]].corr(data[sys.argv[3]]))
+except:
+	print("Could not run on this csv")
