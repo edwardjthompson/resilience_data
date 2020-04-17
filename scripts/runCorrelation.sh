@@ -1,4 +1,4 @@
-for file in /research/jagondzinski/resilience_output/thomp276/2020-04-17-csvOutput/*.csv
+for file in /research/jagodzinski/resilience_output/thomp276/2020-04-17-csvOutput/*.csv
 do
 	if [ $# == 2 ]
 	then
