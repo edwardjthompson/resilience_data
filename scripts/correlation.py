@@ -13,8 +13,8 @@ if (len(sys.argv) < 4):
 	print("Add two columns as arguments to see more exact result")
 	sys.exit(0)
 
-print("\nPearson correlation of", sys.argv[2], "and", sys.argv[3])
 try:
+	print("\nPearson correlation of", sys.argv[2], "and", sys.argv[3])
 	print(data[sys.argv[2]].corr(data[sys.argv[3]]))
 except:
 	print("Could not run on this csv")
