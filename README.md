@@ -5,6 +5,7 @@ Update (Apr 17, 2020):
 
 Update (Mar 2, 2020):
 ~~/final.output.csv has the most recent data~~
+
 distribution data was altered to remove space and ' characters
 distribution and em data are seperated by ";" characters
 
