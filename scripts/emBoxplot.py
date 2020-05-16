@@ -77,7 +77,7 @@ for res in targetResidue:
 					lstMax = sys.maxsize * -1
 					lstMin = sys.maxsize
 
-					usingGlobal = 0
+					usingGlobal = 1
 					if usingGlobal:
 						#Min/Max being calculated globally
 						for num in lst:
@@ -96,10 +96,17 @@ for res in targetResidue:
 					lstMax = "NA"
 					lstMin = "NA"
 				
+				windowInitial = 5
+				window = windowInitial
 				count = 0
 				for num in lst:
-					if num < calculatedThreshold:
+					if window == 0:
+						count -= windowInitial
 						break
+					if num < calculatedThreshold:
+						window -= 1
+					else:
+						window = windowInitial
 					count += 1
 				
 				if count < minCount:
@@ -107,7 +114,7 @@ for res in targetResidue:
 				if count > maxCount:
 					maxCount = count
 
-				logger.writerow((line[1], res, count, lstMax, lstMin, calculatedThreshold, lst))
+				logger.writerow((line[1], res, count, lstMax, lstMin, round(calculatedThreshold, 4), lst))
 
 				dictionary[res].append(int(count))
 
